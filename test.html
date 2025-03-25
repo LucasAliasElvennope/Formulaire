@@ -21,8 +21,8 @@
       </li>
         <li>
         <p>
-        <label for="Age">Age &emsp;</label>
-         <input type="text" id="Age" name="user_age" pattern="\d{2}" maxlength="2"/>
+        <label for="age">Âge :</label>
+        <input type="text" id="age" name="user_age" pattern="^[1-9][0-9]?$" maxlength="2" required>
         </p> 
         </li>
         <li>
@@ -86,7 +86,7 @@
       <li>
       <p>
       <label for="Date_de_naissance">Date de naissance &emsp;</label>
-      <input type="text" id="Date_de_naissance" name="user_date_of_birth" placeholder="01/02/2000" pattern="\d{10}" maxlength="10" required/>
+      <input type="date" id="Date_de_naissance" name="user_date_of_birth" min="1950-01-01" max="2025-12-30" required/>
       </p>
     </li>
     <li>
