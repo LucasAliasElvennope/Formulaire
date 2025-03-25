@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="fr">  <!-- language de la page -->
     <meta charset="UTF-8">
     <title>Mon site de Formulaire</title>
 </head>
@@ -10,27 +9,30 @@
     <ul>
       <li>
         <p>
-        <label for="nom">Nom &emsp;</label> <!-- Première ligne  -->
+        <label for="nom">Nom &emsp;</label> <!--  -->
         <input type="text" id="nom" name="user_name" required/>
       </p>
       </li>
       <li>
         <p>
         <label for="prenom">Prénom &emsp;</label>
-        <input type="text" id="prénom" name="user_firstname" required/>
+        <input type="text" id="prenom" name="user_firstname" required/>
+      </p>
       </li>
         <li>
-        </p>
+        <p>
         <label for="Age">Age &emsp;</label>
-         <input type="number" id="Age" name="user_age" pattern="\d{2}" maxlength="2"/>
+         <input type="text" id="Age" name="user_age" pattern="\d{2}" maxlength="2"/>
+        </p> 
         </li>
         <li>
           <p>
           <label for="sexe">Sexe &emsp;</label>
-          <select id="sexe" name="user_sexe" required> <!-- Menu déroulant -->
-          <option value="" disabled selected>   <!-- Option qui fait que ni femme ni homme est selectionné de base -->
-          <option value="Homme">Homme</option> 
-          <option value="Femme">Femme</option>
+          <select id="sexe" name="user_sexe" size="1"> <!-- Menu déroulant -->
+          <option value="">&emsp;</option>           <!-- Option qui fait que rien n'aparait -->
+          <option value="Masculin">Masculin</option> 
+          <option value="Feminin">Feminin</option>
+          <option value="Autre">Autre</option>
         </select>
         </p>  
         </li>
@@ -42,27 +44,27 @@
       </li>
       <li>
         <p>
-        <label for="adresse">Adresse &emsp;</label>
+        <label for="adresse">Adresse postal &emsp;</label>
         <input type="text" id="adresse" name="user_adress" placeholder="Entrer votre adresse" required/>
         </p>
       </li>
         <li>
           <p>
           <label for="codepostal">Code postal &emsp;</label>
-          <input type="text" id="codepostal" name="codepostal" placeholder="Code postal" pattern="\d{5}" maxlength="5" inputmode="numeric" required/>
+          <input type="text" id="codepostal" name="codepostal" placeholder="Code postal" pattern="\d{5}" maxlength="5" required/>
           </p>
         </li>
         <li>
           <p>
         <label for="ville">Ville &emsp;</label>
-        <input type="text" id="Ville" name="user_city" placeholder="Entrer votre ville" required/>
+        <input type="text" id="ville" name="user_city" placeholder="Entrer votre ville" required/>
         </p>
       </li>
       <li>
         <p>
-        <label for="metier">Métier &emsp;</label>
+        <label for="metier">Métier exercé &emsp;</label>
         <select id="metier" name="user_work" required>
-          <option value="" disabled selected>   
+          <option value="">&emsp;</option>
           <option value="Président">Président</option> 
           <option value="Streameur">Streameur</option>
           <option value="Agent_d'entretien">Agent d'entretien</option>
@@ -72,24 +74,26 @@
       <li>
         <p>
         <label for="nationalite">Nationalité &emsp;</label>
-        <select id="nationalite" name="user_nationality" required>  
-          <option value="Francais">Francais</option> 
+        <select id="nationalite" name="user_nationality" required>
+          <option value="">&emsp;</option>
+          <option value="Francais"> Defaut, Francais</option> 
+          <option value="Francais">Francais, Canada</option> 
           <option value="Espagnol">Espagnol</option>
           <option value="Allemand">Allemand</option>
         </select>
         </p>
       </li>
       <li>
-        <p>
+      <p>
       <label for="Date_de_naissance">Date de naissance &emsp;</label>
-      <input type="text" id="Date_de_naissance" name="user_date_of_birth" placeholder="01/02/2000" pattern="\d{10}" maxlength="10"required/>
+      <input type="text" id="Date_de_naissance" name="user_date_of_birth" placeholder="01/02/2000" pattern="\d{10}" maxlength="10" required/>
       </p>
     </li>
     <li>
       <p>
     <label for="pays_de_naissance">Pays de naissance &emsp;</label>
     <select id="pays_de_naissance" name="user_place_pf_birth" required>  
-      <option value="" disabled selected></option>
+      <option value="">&emsp;</option>
       <option value="France">France</option> 
       <option value="Espagne">Espagne</option>
       <option value="Allemagne">Allemagne</option>
@@ -99,25 +103,25 @@
   <li>
     <p>
     <label for="num_securite_social">Numéro sécurité social &emsp;</label>
-    <input type="text" id="num_securite_social" name="num_securite_social" placeholder="numéro de securite social" pattern="\d{13}" maxlength="13" inputmode="numeric" required/>
+    <input type="text" id="num_securite_social" name="num_securite_social" placeholder="numéro de securite social" pattern="\d{13}" maxlength="13" required/>
     </p>
   </li>
   <li>
     <p>
     <label for="num_passeport">Numéro de passeport &emsp;</label>
-    <input type="text" id="num_passeport" name="num_passeport" placeholder="numéro de passeport" pattern="\d{13}" maxlength="13" inputmode="numeric" required/>
+    <input type="text" id="num_passeport" name="num_passeport" placeholder="numéro de passeport" pattern="\d{13}" maxlength="13" required/>
     </p>
   </li>
   <li>
     <p>
-    <label for="date_delivrance_passeport">Date de délivrance de passeport &emsp;</label>
-    <input type="date" name="party" min="1950-01-01" max="2025-12-30" />
+    <label for="date_delivrance_passeport">Date de délivrance du passeport &emsp;</label>
+    <input type="date" id="date_delivrance_passeport" min="1950-01-01" max="2025-12-30" />
     </p>
   </li>
   <li>
     <p>
-    <label for="date_validite_passeport">Date de délivrance de passeport &emsp;</label>
-    <input type="date" name="party" min="1950-01-01" max="2025-12-30" />
+    <label for="date_validite_passeport">Date de validité du passeport &emsp;</label>
+    <input type="date" id="date_validite_passeport" min="1950-01-01" max="2025-12-30" />
     </p>
   </li>
     </ul>
