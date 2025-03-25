@@ -5,7 +5,7 @@
     <title>Mon site de Formulaire</title>
 </head>
 <body>
-  <h1>Super duper Formulaire</h1> <!-- Titre affiché -->
+  <h1>Formulaire d'inscription</h1> <!-- Titre affiché -->
   <form action="#" method="post">
     <ul>
       <li>
@@ -94,6 +94,30 @@
       <option value="Espagne">Espagne</option>
       <option value="Allemagne">Allemagne</option>
     </select>
+    </p>
+  </li>
+  <li>
+    <p>
+    <label for="num_securite_social">Numéro sécurité social &emsp;</label>
+    <input type="text" id="num_securite_social" name="num_securite_social" placeholder="numéro de securite social" pattern="\d{13}" maxlength="13" inputmode="numeric" required/>
+    </p>
+  </li>
+  <li>
+    <p>
+    <label for="num_passeport">Numéro de passeport &emsp;</label>
+    <input type="text" id="num_passeport" name="num_passeport" placeholder="numéro de passeport" pattern="\d{13}" maxlength="13" inputmode="numeric" required/>
+    </p>
+  </li>
+  <li>
+    <p>
+    <label for="date_delivrance_passeport">Date de délivrance de passeport &emsp;</label>
+    <input type="date" name="party" min="1950-01-01" max="2025-12-30" />
+    </p>
+  </li>
+  <li>
+    <p>
+    <label for="date_validite_passeport">Date de délivrance de passeport &emsp;</label>
+    <input type="date" name="party" min="1950-01-01" max="2025-12-30" />
     </p>
   </li>
     </ul>
