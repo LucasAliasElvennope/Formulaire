@@ -9,34 +9,93 @@
   <form action="#" method="post">
     <ul>
       <li>
-        <label for="nom">Nom</label>
+        <p>
+        <label for="nom">Nom &emsp;</label> <!-- Première ligne  -->
         <input type="text" id="nom" name="user_name" required/>
+      </p>
       </li>
       <li>
-        <label for="prenom">Prénom</label>
+        <p>
+        <label for="prenom">Prénom &emsp;</label>
         <input type="text" id="prénom" name="user_firstname" required/>
       </li>
         <li>
-        <label for="Age">Age</label>
-         <input type="number" id="Age" name="user_age" required/>
+        </p>
+        <label for="Age">Age &emsp;</label>
+         <input type="number" id="Age" name="user_age" pattern="\d{2}" maxlength="2"/>
         </li>
         <li>
-          <label for="sexe">Sexe</label>
+          <p>
+          <label for="sexe">Sexe &emsp;</label>
           <select id="sexe" name="user_sexe" required> <!-- Menu déroulant -->
           <option value="" disabled selected>   <!-- Option qui fait que ni femme ni homme est selectionné de base -->
-            <option value="" disabled selected>
           <option value="Homme">Homme</option> 
           <option value="Femme">Femme</option>
         </select>
+        </p>  
         </li>
         <li>
-        <label for="mail">Email</label>
+        <p>
+        <label for="mail">Email &emsp;</label>
         <input type="email" id="mail" name="user_mail" required/>
+        </p>
       </li>
       <li>
-        <label for="adresse">Adresse</label>
-        <input type="text" id="adresse" name="user_adress" placeholder="Entrer votre adresse"/>
+        <p>
+        <label for="adresse">Adresse &emsp;</label>
+        <input type="text" id="adresse" name="user_adress" placeholder="Entrer votre adresse" required/>
+        </p>
       </li>
+        <li>
+          <p>
+          <label for="codepostal">Code postal &emsp;</label>
+          <input type="text" id="codepostal" name="codepostal" placeholder="Code postal" pattern="\d{5}" maxlength="5" inputmode="numeric" required/>
+          </p>
+        </li>
+        <li>
+          <p>
+        <label for="ville">Ville &emsp;</label>
+        <input type="text" id="Ville" name="user_city" placeholder="Entrer votre ville" required/>
+        </p>
+      </li>
+      <li>
+        <p>
+        <label for="metier">Métier &emsp;</label>
+        <select id="metier" name="user_work" required>
+          <option value="" disabled selected>   
+          <option value="Président">Président</option> 
+          <option value="Streameur">Streameur</option>
+          <option value="Agent_d'entretien">Agent d'entretien</option>
+        </select>
+        </p>
+      </li>
+      <li>
+        <p>
+        <label for="nationalite">Nationalité &emsp;</label>
+        <select id="nationalite" name="user_nationality" required>  
+          <option value="Francais">Francais</option> 
+          <option value="Espagnol">Espagnol</option>
+          <option value="Allemand">Allemand</option>
+        </select>
+        </p>
+      </li>
+      <li>
+        <p>
+      <label for="Date_de_naissance">Date de naissance &emsp;</label>
+      <input type="text" id="Date_de_naissance" name="user_date_of_birth" placeholder="01/02/2000" pattern="\d{10}" maxlength="10"required/>
+      </p>
+    </li>
+    <li>
+      <p>
+    <label for="pays_de_naissance">Pays de naissance &emsp;</label>
+    <select id="pays_de_naissance" name="user_place_pf_birth" required>  
+      <option value="" disabled selected></option>
+      <option value="France">France</option> 
+      <option value="Espagne">Espagne</option>
+      <option value="Allemagne">Allemagne</option>
+    </select>
+    </p>
+  </li>
     </ul>
   </form>
 </body>
